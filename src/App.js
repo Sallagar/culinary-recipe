@@ -9,18 +9,19 @@ import { NotFound } from './pages/NotFound';
 function App() {
   return (
     <>
-      <Header />
-      <main className='container content'>
-        <Routes>
+      <Routes>
+        <Header />
+        <main className='container content'>
           <Switch>
             <Route exact path='/' render={ () => <Home /> }/>
             <Route path='/about' render={ () => <About /> }/> 
-            <Route path='/contact' render={ () => <Contact /> }/>
+            <Route path='/contacts' render={ () => <Contact /> }/>
             <Route render={NotFound} />
           </Switch>
-        </Routes> 
-      </main>
-      <Footer />
+          
+        </main>
+        <Footer />
+      </Routes>
     </>
   );
 }
