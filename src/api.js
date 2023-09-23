@@ -20,4 +20,9 @@ const getFilteredArea = async (area) => {
     return await response.json()
 }
 
-export {getMealById, getAllCategories, getFilteredCategories, getFilteredArea}
+export {
+    getMealById, 
+    getAllCategories, 
+    getFilteredCategories, 
+    getFilteredArea
+}
