@@ -8,13 +8,15 @@ const Meal = (props) => {
 
     return <div className="card">
     <div className="card-image">
-        <img src={strMealThumb}  alt='img'/>
+        <Link to={`/meal/${idMeal}`}>
+            <img src={strMealThumb}  alt='img'/>
+        </Link>
     </div>
     <div className="card-content">
         <span className="card-title">{strMeal}</span>
     </div>
     <div className='card-action'>
-        <Link to={`/meal/${idMeal}`} className='btn blue darken-1' >
+        <Link  className='btn blue darken-1' >
             Wath recipe
         </Link>
     </div>
