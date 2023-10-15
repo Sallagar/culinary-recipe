@@ -16,7 +16,7 @@ const Meal = (props) => {
         <span className="card-title">{strMeal}</span>
     </div>
     <div className='card-action'>
-        <Link  className='btn blue darken-1' >
+        <Link  className='btn blue darken-1' to={`/meal/${idMeal}`} >
             Wath recipe
         </Link>
     </div>
